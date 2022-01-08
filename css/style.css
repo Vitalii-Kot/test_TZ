@@ -1,0 +1,348 @@
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% сверху и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Модальное окно */
+/* 
+.modal_div {
+  width: 640px;
+  border-radius: 5px;
+  background: #fff;
+  position: fixed;
+  top: 5%;
+  overflow-y: auto;
+  left: 50%;
+  margin-left: -320px;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  padding: 30px;
+}
+.modal_div .modal_close {
+  position: absolute;
+  top: 10px;
+  line-height: 20px;
+  right: 15px;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #a9a9a9;
+}
+#overlay {
+  z-index: 9998;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+} */
+
+.mobile {
+  display: none;
+}
+.text2 img {
+  top: 57px;
+  width: 560px;
+  position: absolute;
+  left: 50%;
+  margin-left: 10px;
+  z-index: 6;
+  margin-top: -150px;
+}
+.text2 div {
+  top: 140px;
+  left: 100px;
+  display: none;
+}
+header,
+.block3 .image p {
+  background-color: rgb(253, 51, 191);
+}
+.text6 input[name="name"] {
+  background: rgba(253, 51, 191, 0.4) url("img/icon1-form.png") no-repeat scroll
+    10px center;
+}
+.text6 input[name="phone"] {
+  background: rgba(253, 51, 191, 0.4) url("img/icon1-form.png") no-repeat scroll
+    10px center;
+}
+.block1-left .text1 {
+  background: transparent url("img/block1-480.png") no-repeat scroll left top;
+  background-position: 50%;
+  background-size: 100%;
+}
+.text13 p {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .modal_div {
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    overflow-y: auto;
+  }
+  div#modal_callhunter {
+    height: auto !important;
+  }
+}
+
+/* Модальное окно */
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+  .text15 h1 {
+    font-size: 42px;
+    padding-bottom: 30px;
+  }
+  .display {
+    display: none !important;
+  }
+
+  .block1-left .text1 {
+    background: none;
+  }
+  .block1-left .text2 {
+    display: block;
+    height: 240px;
+  }
+  .text2 div {
+    top: 270px;
+  }
+  .block1-left .text2 img {
+    width: 260px;
+    position: relative;
+    left: 0%;
+    margin-left: -60px;
+    z-index: 0;
+    margin-top: 77px;
+  }
+  .block2-right .text3 {
+    width: 60%;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 150px;
+  }
+  .contact {
+    display: block;
+  }
+  .block5_slider_item_quote1 {
+    top: 267px;
+  }
+  .block5_slider_item {
+    height: 481px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .block1-left .text2 img {
+    margin-top: 117px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .text13 p {
+    margin-top: -120px;
+    margin-left: 115px;
+  }
+  .block2-right .text3 {
+    margin-top: -250px;
+    margin-left: 120px;
+  }
+  .block1-left .text2 img {
+    margin-top: 131px;
+  }
+}
+
+/* CallHunter */
+
+@font-face {
+  font-family: "callhunter";
+  src: url("font-callhunter/callhunter.html");
+  src: url("font-callhunter/callhunter.html#iefix") format("embedded-opentype"),
+    url("font-callhunter/callhunter-2.html") format("woff"),
+    url("font-callhunter/callhunter-3.html") format("truetype"),
+    url("font-callhunter/callhunter-4.html#callhunter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "callhunter";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-callhunter:before {
+  content: "\e80b";
+} /* '' */
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(0, 174, 243, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 174, 243, 1);
+  }
+  100% {
+    background-color: rgba(0, 174, 243, 0.5);
+  }
+}
+
+.call-hunter {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  border-radius: 50%;
+  background-color: rgba(0, 174, 243, 0.75);
+  animation: pulse 2s infinite;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+}
+
+.call-hunter > a {
+  display: block;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  text-decoration: none;
+}
+.call-hunter > a:hover span.icon-callhunter {
+  opacity: 0;
+}
+.call-hunter > a:hover p.text {
+  opacity: 1;
+}
+.call-hunter > a span.icon-callhunter {
+  text-align: center;
+  line-height: 100px;
+  font-size: 48px;
+  color: #fff;
+  width: 100px;
+  opacity: 1;
+  display: block;
+  position: absolute;
+}
+.call-hunter > a p.text {
+  text-align: center;
+  line-height: 18px;
+  width: 100px;
+  padding: 35px 0px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  margin: 0px;
+  text-decoration: none;
+}
+div#modal_callhunter {
+  background-color: #e9eaea;
+  width: 400px !important;
+  margin-left: -200px !important;
+}
+div#modal_callhunter p {
+  margin: 0px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-family: sans-serif;
+}
+div#modal_callhunter input[name="clientPhoneInitial"] {
+  width: 400px;
+  border: 1px solid #d0d0d0;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  display: block;
+  background-color: #d0d0d0;
+  color: #333;
+  margin: 0 auto;
+}
+div#modal_callhunter input[type="submit"] {
+  text-align: center;
+  width: 273px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid #5c5c5c;
+  background-color: #5c5c5c;
+  color: #fff;
+  font-weight: 300;
+  font-family: sans-serif;
+  height: 42px;
+}
+
+/* CallHunter */
+
+/* стили с index.html */
+.contact {
+  color: #fff;
+  font-size: 1.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  display: none;
+  text-align: center;
+  border: medium none;
+  border-radius: 4px;
+  background: #f57400 linear-gradient(#ffc726 0%, #f57400 100%) repeat scroll 0%
+    0%;
+  cursor: pointer;
+}
+/* стили с index.html */
